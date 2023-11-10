@@ -26,7 +26,9 @@
 }
 .logo{
   position: relative;
+  top: 10px;
   left: 40px;
+  transform: scale(1.5);
 }
 .logo img{
   width: 230px;
@@ -243,16 +245,31 @@
   }
 }
 
+/* .first-part{
+  width: 100%;
+  background-color: #fa4e0a;
+  max-height: fit-content;
+} */
+
 
 
 .first-part img {
   /* margin-top:16%; */
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  max-width: 100%;
-max-height: auto;
+  /* position: relative; */
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  /* max-width: 100%; */
+  /* background-position: center; */
+  /* background-attachment: fixed; */
+  /* width: 1349px; */
+   background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            width: 100%;
+
+  filter: blur(1.2px);
+/* max-height: auto; */
   /* transform: scale(1.4); */
 }
 
@@ -271,7 +288,7 @@ max-height: auto;
 .textonimage p {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 500;
 }
@@ -281,7 +298,7 @@ max-height: auto;
   height: 50px;
   border-radius: 30px;
   border: none;
-  background-color: orangered;
+  background-color: rgb(0, 153, 255);
   color: white;
   font-size: 15px;
   font-weight: bold;
@@ -303,13 +320,22 @@ max-height: auto;
   font-size: 2.2rem;
 }
 
+.second-part  h2 span:nth-child(1) {color: red;}
+.second-part h2 span:nth-child(2) {color: blue;}.second-part h2 span:nth-child(3) {color: yellow;}
+
+
+
 .second-part p {
   position: relative;
   padding-left: 5%;
   font-size: 1.4rem;
-  text-align: justify;
+  font-weight: 1000;
+  /* text-align: justify; */
   line-height: 2rem;
-  align-items: center;
+  /* align-items: center; */
+  /* content: " "; */
+  /* display: block; */
+  /* margin: 1em 0; */
 }
 
 .grid {
@@ -322,11 +348,47 @@ max-height: auto;
 
 .box-1 {
   position: relative;
-  height: 250px;
-  width: 290px;
-  background-size: cover;
-  background-image: url("/grid.jpg");
+  height: 220px;
+  width: 296px;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-size:22rem; */
+  /* background-position:0.2rem; */
+  background-image: url("/robotics.png");
   border-radius: 5px;
+}
+
+.box-2 {
+  position: relative;
+  height: 220px;
+  width: 296px;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-size:22rem; */
+  /* background-position:0.2rem; */
+  background-image: url("/challenges.png");
+  border-radius: 5px;
+}
+
+.box-3{
+  position: relative;
+  height: 220px;
+  width: 296px;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-size:22rem; */
+  /* background-position:0.2rem; */
+  background-image: url("/maker.png");
+  border-radius: 5px;
+}
+
+.box-4 {
+  position: relative;
+  height: 220px;
+  width: 296px;
+  /* background-size: cover; */
+  background-image: url("/entrepreneurship.png");
+  /* border-radius: 5px; */
 }
 
 .text {
@@ -334,15 +396,15 @@ max-height: auto;
   bottom: 0;
   height: 70px;
   width: 100%;
-  background-color: rgb(22, 255, 216);
+  background-color: rgb(0, 13, 73);
 }
 
 .text h2 {
   position: relative;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   top: 25%;
-  color: white;
+  color: rgb(255, 208, 0);
 }
 
 .grid2 {
@@ -356,7 +418,7 @@ max-height: auto;
 .video {
   height: 350px;
   width: 50%;
-  background-image: url("/grid.jpg");
+  background-image: url("/vid.JPG");
   background-size: cover;
   margin-left: 20px;
 }
@@ -366,7 +428,7 @@ max-height: auto;
   background-color: rgb(253, 253, 253);
   margin-right: 20px;
   padding: 50px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 2rem;
 }
@@ -380,10 +442,11 @@ max-height: auto;
 }
 
 .slideshow-bg {
+  /* padding-top: 50px; */
   position: relative;
   height: 500px;
   width: 100%;
-  background-color: #b8b8b8;
+  background-color: rgb(0, 13, 73);
   align-items: center;
 }
 
@@ -432,7 +495,7 @@ max-height: auto;
 .sixth-part {
   height: 850px;
   width: 100%;
-  background-color: #979797;
+  background-color:rgb(0, 13, 73)
 }
 
 .sixth-part p {
@@ -450,7 +513,7 @@ max-height: auto;
 
 .firsthalf {
   height: 600px;
-  background-color: rgb(13, 0, 56);
+  background-color: rgb(255, 255, 255);
   width: 50%;
 }
 
@@ -521,28 +584,16 @@ max-height: auto;
 }
 
 .footer {
-  background: rgb(13, 0, 56);
-  align-content: center;
-  height: 500px;
+  background-color: rgb(0, 13, 73);
+  height: 300px;
 }
 
-.footer{
-  display: flex;
+.footer img{
+  padding-top: 5%;
+  padding-left: 45%;
 }
 
-.cc, .contact{
-  flex: 1;
-  
-}
 
-.cc{
-  padding-top: 10%;
-  padding-left: 10%;
-  line-height: 3rem;
-  font-size: 1.7rem;
-  color: white;
-  font-weight: 700;
-}
 
 
 
